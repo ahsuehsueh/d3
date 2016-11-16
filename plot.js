@@ -10,7 +10,7 @@ d3.csv("https://ahsuehsueh.github.io/d3/userPost.csv",
 		console.log(data);
 		var maxy = d3.max(data, function(d){ return d.like; }); 
 		var lines = d3.line().x(function(d,i){return i*(width/ln);}).y(function(d){return height-d.like});  
-		ctrl.append("path").data([data]).attr("d", lines).attr("stroke", "red").attr("fill", "none");
+		ctrl.append("path").data([data]).attr("d", lines);
 		
 	}
 
