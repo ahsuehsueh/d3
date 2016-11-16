@@ -2,7 +2,7 @@ function plot()
 {
 var width = 1024;
 var height = 1700;
-var ctrl = d3.select("body").append("svg").attr("width", width).attr("height", height);
+var ctrl = d3.select(".diagram").append("svg").attr("width", width).attr("height", height);
 d3.csv("https://ahsuehsueh.github.io/d3/userPost.csv", 
 	function(data)
 	{
